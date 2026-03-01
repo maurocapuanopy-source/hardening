@@ -6,8 +6,8 @@ repo_name: maurocapuanopy-source/hardening
 theme:
   name: material
   language: pt-BR
-  logo: material/shield-lock
-  favicon: material/shield-lock
+  logo: logo/horizontal.png
+  favicon: logo/icon.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

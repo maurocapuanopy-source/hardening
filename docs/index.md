@@ -1,5 +1,4 @@
-![Logo Horizontal](../logo/horizontal.png)
-![Cover](../logo/cover.png)
+![Logo Horizontal](logo/horizontal.png)
 
 # Hardening Ubuntu 🐧🔒
 

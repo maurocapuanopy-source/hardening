@@ -1,6 +1,3 @@
-![Logo Horizontal](logo/horizontal.png)
-![Cover](logo/cover.png)
-
 # Ubuntu Hardening (Edição Systemd) 🐧🔒
 
 Este projeto oferece uma maneira rápida e automatizada de tornar um servidor Ubuntu significativamente mais seguro. Ele aplica uma série de configurações de "endurecimento" (hardening) baseadas em benchmarks de segurança e nas melhores práticas da indústria.
