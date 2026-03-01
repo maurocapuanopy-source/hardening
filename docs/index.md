@@ -1,60 +1,81 @@
 ![Logo Horizontal](logo/horizontal.png)
 
-# Hardening Ubuntu 🐧🔒
+# Hardening Ubuntu Docs 🐧🔒
 
-Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Systemd)**.
+Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Systemd)**. Este portal oferece um guia completo para transformar seu servidor Linux em uma fortaleza digital.
 
-Este projeto oferece uma maneira rápida e automatizada de tornar um servidor Ubuntu significativamente mais seguro, aplicando uma série de configurações baseadas em benchmarks de segurança e melhores práticas.
+---
 
-## 🎯 Por que usar este projeto?
+## 🚀 Comece por aqui
 
-Manter servidores Linux seguros requer atenção a centenas de detalhes, desde permissões de arquivos até parâmetros de rede no kernel. Este projeto automatiza esse processo difícil e propenso a erros.
+<div class="grid cards" markdown>
 
-### Como ele ajuda:
+-   :material-lightning-bolt:{ .lg .middle } __Quick Start__
 
-- **Redução da Superfície de Ataque**: Desativa o que você não usa.
-- **Conformidade**: Segue recomendações do benchmark CIS.
-- **Automação Profissional**: Suporte nativo para **Ansible** e **Docker**.
-- **Auditoria**: Vem com mais de 700 testes automatizados.
+    ---
+
+    Aprenda a rodar o projeto em segundos em um novo servidor.
+
+    [:octicons-arrow-right-24: Ver Guia](guias/quick-start.md)
+
+-   :material-book-open-variant:{ .lg .middle } __Detalhes Técnicos__
+
+    ---
+
+    Entenda cada camada de proteção e como ela blinda seu sistema.
+
+    [:octicons-arrow-right-24: Ver Proteções](protecoes/kernel.md)
+
+-   :material-robot-confused:{ .lg .middle } __Automação__
+
+    ---
+
+    Integre com Ansible ou Docker para criar imagens douradas.
+
+    [:octicons-arrow-right-24: Ver Automação](guia-ansible.md)
+
+-   :material-chart-bell-curve-cumulative:{ .lg .middle } __Verificação__
+
+    ---
+
+    Valide se o seu servidor está realmente seguro com testes reais.
+
+    [:octicons-arrow-right-24: Ver Testes](guias/testes.md)
+
+</div>
 
 ---
 
 ## 🗺️ Mapa Mental do Projeto
 
-Visualize a estrutura do projeto:
-
-### Visão Geral (Imagem)
-![Mapa Mental](logo/mapamental.png)
-
-### Estrutura Detalhada (Markdown)
 ```mermaid
 mindmap
   root(("🛡️ HARDENING UBUNTU"))
     "🚀 Automação"
-      "Guia Ansible"
-      "Guia Docker"
-    "⚙️ Segurança de Sistema"
-      "Kernel & Networking"
-      "Controles de Acesso"
+      "Ansible"
+      "Docker"
+    "⚙️ Segurança"
+      "Kernel"
+      "Rede"
+      "Sistema"
     "📊 Monitoramento"
       "Auditd"
-      "Integridade AIDE"
+      "AIDE"
+    "⚖️ Conformidade"
+      "Testes BATS"
 ```
 
 ---
 
-## 🏗️ Fluxo de Hardening
+## 🏗️ Fluxo de Operação
 
 ```mermaid
-graph TD
-    A[Ubuntu Server] --> B[Ansible/Script Bootstrapping]
-    B --> C{Processo de Hardening}
-    C --> D[Kernel & Networking]
-    C --> E[Users & Access Control]
-    C --> F[Firewall & Monitoring]
-    C --> G[Filesystem Integrity]
-    D & E & F & G --> H[Servidor Endurecido]
-    H --> I[Testes de Conformidade]
+graph LR
+    A[Instalação Limpa] --> B{Método}
+    B -- Ansible --> C[Servidores Remotos]
+    B -- Docker --> D[Imagens Douradas]
+    B -- Manual --> E[Script direto]
+    C & D & E --> F[Aplicação do Hardening]
+    F --> G[Reboot & Testes]
+    G --> H[Pronto para Produção]
 ```
-
-Navegue pelas seções lateral para aprender como usar a automação com Ansible ou como construir imagens Docker endurecidas.
