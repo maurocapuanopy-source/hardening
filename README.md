@@ -6,6 +6,9 @@ Este projeto oferece uma maneira rápida e automatizada de tornar um servidor Ub
 
 ## 🎯 Objetivo do Projeto
 
+> [!TIP]
+> **📽️ [Acesse a Apresentação Interativa (Slideshow)](https://maurocapuanopy-source.github.io/hardening/apresentacao/)** ou visualize o **[PDF Original](./docs/Ubuntu_Systemd_Hardening_clean.pdf)**.
+
 O principal objetivo deste projeto é fornecer uma linha de base de segurança (baseline) para novas instalações do Ubuntu Server. Ele transforma uma instalação padrão em uma "imagem dourada" (golden image) que pode ser usada como referência para outros servidores, garantindo que as políticas de segurança sejam seguidas desde o primeiro dia.
 
 ### Como ele ajuda?
@@ -17,25 +20,36 @@ O principal objetivo deste projeto é fornecer uma linha de base de segurança (
 
 ---
 
-## 🗺️ Mapa Mental do Projeto (Interativo)
+## 🗺️ Mapa Mental do Projeto
 
 Visualize a estrutura do projeto e clique nos links para navegar:
 
-- [**🛡️ HARDENING UBUNTU**](#)
-    - [**🚀 Automação**](#)
-        - [Ansible (Deploy Escala)](./ansible/site.yml)
-        - [Docker (Imagens Gold)](./Dockerfile)
-        - [GitHub Actions (CI/CD)](./.github/workflows/docs.yml)
-    - [**⚙️ Configurações**](#)
-        - [Kernel & Rede](./scripts/kernel)
-        - [Firewall (UFW)](./scripts/ufw)
-        - [SSH Seguro](./scripts/sshdconfig)
-    - [**📊 Monitoramento**](#)
-        - [Auditd (Auditoria)](./scripts/auditd)
-        - [PSAD (Intrusão)](./scripts/psad)
-        - [AIDE (Integridade)](./scripts/aide)
-    - [**🧪 Qualidade**](#)
-        - [Testes Bats](./tests/)
+### Visão Geral (Imagem)
+![Mapa Mental](logo/mapamental.png)
+
+### Estrutura Detalhada (Markdown)
+```mermaid
+mindmap
+  root((🛡️ HARDENING UBUNTU))
+    🚀 Automação
+      ::icon(fa fa-robot)
+      Ansible (Deploy Escala)
+      Docker (Imagens Gold)
+      GitHub Actions (CI/CD)
+    ⚙️ Configurações
+      ::icon(fa fa-cog)
+      Kernel & Rede
+      Firewall (UFW)
+      SSH Seguro
+    📊 Monitoramento
+      ::icon(fa fa-chart-line)
+      Auditd (Auditoria)
+      PSAD (Intrusão)
+      AIDE (Integridade)
+    🧪 Qualidade
+      ::icon(fa fa-check-circle)
+      Testes Bats
+```
 
 ---
 
@@ -141,9 +155,3 @@ Encontrou algo estranho ou quer sugerir uma melhoria? Sinta-se à vontade para a
 
 ---
 
-## 📊 Infográfico do Projeto
-
-![Infográfico de Segurança](logo/infografico.png)
-
----
-*Logo por [reallinfo](https://github.com/reallinfo).*

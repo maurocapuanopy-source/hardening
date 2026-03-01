@@ -21,24 +21,28 @@ Manter servidores Linux seguros requer atenção a centenas de detalhes, desde p
 
 ## 🗺️ Mapa Mental do Projeto
 
-Abaixo apresentamos uma visão geral interativa das capacidades deste projeto:
+Visualize a estrutura do projeto:
 
-- [**🛡️ HARDENING UBUNTU**](#)
-    - [**🚀 Automação**](guia-ansible.md)
-        - [Ansible (Deploy)](guia-ansible.md)
-        - [Docker (Imagens)](guia-docker.md)
-    - [**⚙️ Segurança de Sistema**](manual.md)
-        - [Kernel & Networking](manual.md#kernel-fsysctl)
-        - [Controles de Acesso](manual.md#acesso-e-identidade)
-    - [**📊 Monitoramento**](manual.md#monitoramento-e-auditoria)
-        - [Auditd](manual.md#monitoramento-e-auditoria)
-        - [Integridade AIDE](manual.md#referencia-tecnica)
+### Visão Geral (Imagem)
+![Mapa Mental](logo/mapamental.png)
 
----
-
-## 📊 Infográfico de Segurança
-
-![Infográfico](logo/infografico.png)
+### Estrutura Detalhada (Markdown)
+```mermaid
+mindmap
+  root((🛡️ HARDENING UBUNTU))
+    🚀 Automação
+      ::icon(fa fa-robot)
+      [Guia Ansible](guia-ansible.md)
+      [Guia Docker](guia-docker.md)
+    ⚙️ Segurança de Sistema
+      ::icon(fa fa-cog)
+      [Kernel & Networking](manual.md#kernel-fsysctl)
+      [Controles de Acesso](manual.md#acesso-e-identidade)
+    📊 Monitoramento
+      ::icon(fa fa-chart-line)
+      [Auditd](manual.md#monitoramento-e-auditoria)
+      [Integridade AIDE](manual.md#referencia-tecnica)
+```
 
 ---
 

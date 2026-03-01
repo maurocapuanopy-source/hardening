@@ -12,15 +12,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Modo Claro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Modo Escuro
@@ -39,6 +39,7 @@ theme:
 
 nav:
   - Início: index.md
+  - Apresentação: apresentacao.md
   - Automação:
       - Ansible: guia-ansible.md
       - Docker: guia-docker.md
