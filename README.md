@@ -1,3 +1,4 @@
+![Logo Horizontal](logo/horizontal.png)
 ![Cover](logo/cover.png)
 
 # Ubuntu Hardening (Edição Systemd) 🐧🔒
@@ -16,6 +17,28 @@ O principal objetivo deste projeto é fornecer uma linha de base de segurança (
 - **Conformidade em Segundos**: Aplica configurações que levariam horas para serem feitas manualmente, seguindo recomendações de benchmarks como o CIS (Center for Internet Security).
 - **Proteção Ativa**: Configura Firewall (UFW), Proteção Contra Intrusão (PSAD), Auditoria (Auditd) e integridade de arquivos (AIDE).
 - **Facilidade de Auditoria**: Inclui uma bateria de testes (Bats) para garantir que as proteções foram aplicadas corretamente.
+
+---
+
+## 🗺️ Mapa Mental do Projeto (Interativo)
+
+Visualize a estrutura do projeto e clique nos links para navegar:
+
+- [**🛡️ HARDENING UBUNTU**](#)
+    - [**🚀 Automação**](#)
+        - [Ansible (Deploy Escala)](./ansible/site.yml)
+        - [Docker (Imagens Gold)](./Dockerfile)
+        - [GitHub Actions (CI/CD)](./.github/workflows/docs.yml)
+    - [**⚙️ Configurações**](#)
+        - [Kernel & Rede](./scripts/kernel)
+        - [Firewall (UFW)](./scripts/ufw)
+        - [SSH Seguro](./scripts/sshdconfig)
+    - [**📊 Monitoramento**](#)
+        - [Auditd (Auditoria)](./scripts/auditd)
+        - [PSAD (Intrusão)](./scripts/psad)
+        - [AIDE (Integridade)](./scripts/aide)
+    - [**🧪 Qualidade**](#)
+        - [Testes Bats](./tests/)
 
 ---
 
@@ -118,6 +141,12 @@ Isso validará centenas de configurações individuais para garantir que seu ser
 
 ## 🛡️ Contribuição
 Encontrou algo estranho ou quer sugerir uma melhoria? Sinta-se à vontade para abrir uma [Issue](https://github.com/konstruktoid/hardening/issues/) ou enviar um Pull Request.
+
+---
+
+## 📊 Infográfico do Projeto
+
+![Infográfico de Segurança](logo/infografico.png)
 
 ---
 *Logo por [reallinfo](https://github.com/reallinfo).*

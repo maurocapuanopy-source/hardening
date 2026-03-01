@@ -1,3 +1,4 @@
+![Logo Horizontal](../logo/horizontal.png)
 ![Cover](../logo/cover.png)
 
 # Hardening Ubuntu 🐧🔒
@@ -16,6 +17,29 @@ Manter servidores Linux seguros requer atenção a centenas de detalhes, desde p
 - **Conformidade**: Segue recomendações do benchmark CIS.
 - **Automação Profissional**: Suporte nativo para **Ansible** e **Docker**.
 - **Auditoria**: Vem com mais de 700 testes automatizados.
+
+---
+
+## 🗺️ Mapa Mental do Projeto
+
+Abaixo apresentamos uma visão geral interativa das capacidades deste projeto:
+
+- [**🛡️ HARDENING UBUNTU**](#)
+    - [**🚀 Automação**](guia-ansible.md)
+        - [Ansible (Deploy)](guia-ansible.md)
+        - [Docker (Imagens)](guia-docker.md)
+    - [**⚙️ Segurança de Sistema**](manual.md)
+        - [Kernel & Networking](manual.md#kernel-fsysctl)
+        - [Controles de Acesso](manual.md#acesso-e-identidade)
+    - [**📊 Monitoramento**](manual.md#monitoramento-e-auditoria)
+        - [Auditd](manual.md#monitoramento-e-auditoria)
+        - [Integridade AIDE](manual.md#referencia-tecnica)
+
+---
+
+## 📊 Infográfico de Segurança
+
+![Infográfico](../logo/infografico.png)
 
 ---
 
