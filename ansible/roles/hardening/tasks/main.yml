@@ -1,0 +1,56 @@
+---
+- name: Preparar Sistema (Update & Upgrade)
+  apt:
+    update_cache: yes
+    upgrade: dist
+  become: yes
+
+- name: Instalar Dependências Iniciais
+  apt:
+    name:
+      - git
+      - net-tools
+      - procps
+      - openssh-server
+    state: present
+    install_recommends: no
+  become: yes
+
+- name: Garantir que o SSH está ativo
+  systemd:
+    name: ssh
+    state: started
+    enabled: yes
+  become: yes
+
+- name: Criar diretório de destino
+  file:
+    path: "{{ hardening_dest_dir }}"
+    state: directory
+    mode: '0755'
+  become: yes
+
+- name: Sincronizar arquivos do projeto
+  copy:
+    src: "../../../"
+    dest: "{{ hardening_dest_dir }}"
+    mode: 'preserve'
+  become: yes
+
+- name: Aplicar Template ubuntu.cfg
+  template:
+    src: ubuntu.cfg.j2
+    dest: "{{ hardening_dest_dir }}/ubuntu.cfg"
+    mode: '0644'
+  become: yes
+
+- name: Executar script de hardening
+  shell: "bash ubuntu.sh"
+  args:
+    chdir: "{{ hardening_dest_dir }}"
+  become: yes
+  register: hardening_output
+
+- name: Mostrar resultado do hardening
+  debug:
+    var: hardening_output.stdout_lines

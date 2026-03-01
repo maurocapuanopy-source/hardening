@@ -1,0 +1,21 @@
+---
+# Ansible Hardening Variables
+# Based on ubuntu.cfg
+
+hardening_fw_admin: "127.0.0.1"
+hardening_ssh_grps: "sudo"
+hardening_ssh_port: "22"
+hardening_sysctl_conf: "./misc/sysctl.conf"
+hardening_auditd_mode: "1"
+hardening_auditd_rules: "./misc/audit-base.rules ./misc/audit-aggressive.rules ./misc/audit-docker.rules"
+hardening_logrotate_conf: "./misc/logrotate.conf"
+hardening_ntp_server_pool: "0.ubuntu.pool.ntp.org 1.ubuntu.pool.ntp.org 2.ubuntu.pool.ntp.org 3.ubuntu.pool.ntp.org pool.ntp.org"
+hardening_timedatectl: ""
+hardening_verbose: "N"
+hardening_autofill: "N"
+hardening_admin_email: "root@localhost"
+hardening_keep_snapd: "Y"
+hardening_changeme: "ANSIBLE_HARDENING_{{ ansible_date_time.epoch }}"
+
+# Remote paths
+hardening_dest_dir: "/opt/hardening"

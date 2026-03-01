@@ -1,0 +1,5 @@
+---
+- name: Hardening Ubuntu Servers
+  hosts: all
+  roles:
+    - hardening

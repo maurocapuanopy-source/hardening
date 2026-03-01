@@ -1,0 +1,7 @@
+services:
+  hardened-ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hardening-project/ubuntu-hardened:latest
+    container_name: hardening-builder

@@ -1,0 +1,44 @@
+site_name: Hardening Ubuntu Docs
+site_description: Documentação didática do projeto de hardening do Ubuntu.
+repo_url: https://github.com/konstruktoid/hardening
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+
+nav:
+  - Início: index.md
+  - Automação:
+      - Ansible: guia-ansible.md
+      - Docker: guia-docker.md
+  - Referência Técnica: manual.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
