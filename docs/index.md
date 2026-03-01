@@ -38,7 +38,7 @@ Abaixo apresentamos uma visão geral interativa das capacidades deste projeto:
 
 ## 📊 Infográfico de Segurança
 
-![Infográfico](../logo/infografico.png)
+![Infográfico](logo/infografico.png)
 
 ---
 

@@ -2,6 +2,7 @@ site_name: Hardening Ubuntu Docs
 site_description: Documentação didática do projeto de hardening do Ubuntu.
 repo_url: https://github.com/maurocapuanopy-source/hardening
 repo_name: maurocapuanopy-source/hardening
+site_url: https://maurocapuanopy-source.github.io/hardening/
 
 theme:
   name: material
