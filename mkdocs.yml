@@ -36,18 +36,33 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
 
 nav:
   - Início: index.md
   - Apresentação: apresentacao.md
-  - Automação:
+  - 🛠️ Guia de Início:
+      - Quick Start: guias/quick-start.md
+      - Preparação de S.O: guias/preparacao.md
+      - Execução do Script: guias/execucao.md
+  - 🚀 Automação:
       - Ansible: guia-ansible.md
       - Docker: guia-docker.md
-  - Referência Técnica: manual.md
+  - 🛡️ Proteções em Detalhe:
+      - Kernel & Sistemas de Arquivos: protecoes/kernel.md
+      - Rede & Firewall: protecoes/rede-firewall.md
+      - Acesso & Identidade: protecoes/acesso-identidade.md
+      - Auditoria & Monitoramento: protecoes/auditoria.md
+  - ⚖️ Referência:
+      - Manual Técnico: manual.md
+      - Testes de Conformidade: guias/testes.md
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -60,3 +75,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:pymdownx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
