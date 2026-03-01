@@ -8,7 +8,7 @@ Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Syst
 
 ## 🚀 Comece por aqui
 
-<div class="grid cards" markdown>
+/// grid | cards
 
 -   :material-lightning-bolt:{ .lg .middle } __Quick Start__
 
@@ -42,7 +42,7 @@ Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Syst
 
     [:octicons-arrow-right-24: Ver Testes](guias/testes.md)
 
-</div>
+///
 
 ---
 

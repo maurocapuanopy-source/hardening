@@ -4,7 +4,7 @@ Bem-vindo ao guia rápido de hardening. Aqui você encontrará os comandos essen
 
 ## 🚀 Em 3 Passos
 
-<div class="grid cards" markdown>
+/// grid | cards
 
 -   :material-clock-fast:{ .lg .middle } __Passo 1: Preparar__
 
@@ -27,7 +27,7 @@ Bem-vindo ao guia rápido de hardening. Aqui você encontrará os comandos essen
     Rode o motor de segurança:
     `sudo bash ubuntu.sh`
 
-</div>
+///
 
 ---
 
