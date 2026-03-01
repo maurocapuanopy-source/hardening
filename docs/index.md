@@ -1,3 +1,5 @@
+![Cover](../logo/cover.png)
+
 # Hardening Ubuntu 🐧🔒
 
 Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Systemd)**.
