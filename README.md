@@ -6,6 +6,8 @@ Este projeto oferece uma maneira rápida e automatizada de tornar um servidor Ub
 
 ## 🎯 Objetivo do Projeto
 
+![Logo Horizontal](docs/logo/horizontal.png)
+
 > [!IMPORTANT]
 > ### 📽️ [VER APRESENTAÇÃO INTERATIVA (SLIDESHOW)](https://maurocapuanopy-source.github.io/hardening/apresentacao/)
 > *Para uma navegação fluida pelo material técnico, acesse nossa versão web interativa.*
