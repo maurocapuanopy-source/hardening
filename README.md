@@ -32,21 +32,21 @@ Visualize a estrutura do projeto e clique nos links para navegar:
 ### Estrutura Detalhada (Markdown)
 ```mermaid
 mindmap
-  root(("🛡️ HARDENING UBUNTU"))
-    "🚀 Automação"
-      "Ansible (Deploy Escala)"
-      "Docker (Imagens Gold)"
-      "GitHub Actions (CI/CD)"
-    "⚙️ Configurações"
-      "Kernel & Rede"
-      "Firewall (UFW)"
-      "SSH Seguro"
-    "📊 Monitoramento"
-      "Auditd (Auditoria)"
-      "PSAD (Intrusão)"
-      "AIDE (Integridade)"
-    "🧪 Qualidade"
-      "Testes Bats"
+  root((🛡️ HARDENING UBUNTU))
+    🚀 Automação
+      Ansible (Deploy Escala)
+      Docker (Imagens Gold)
+      GitHub Actions (CI/CD)
+    ⚙️ Configurações
+      Kernel e Rede
+      Firewall (UFW)
+      SSH Seguro
+    📊 Monitoramento
+      Auditd (Auditoria)
+      PSAD (Intrusão)
+      AIDE (Integridade)
+    🧪 Qualidade
+      Testes Bats
 ```
 
 ---

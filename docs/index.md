@@ -50,19 +50,19 @@ Bem-vindo à documentação oficial do projeto **Hardening Ubuntu (Edição Syst
 
 ```mermaid
 mindmap
-  root(("🛡️ HARDENING UBUNTU"))
-    "🚀 Automação"
-      "Ansible"
-      "Docker"
-    "⚙️ Segurança"
-      "Kernel"
-      "Rede"
-      "Sistema"
-    "📊 Monitoramento"
-      "Auditd"
-      "AIDE"
-    "⚖️ Conformidade"
-      "Testes BATS"
+  root((🛡️ HARDENING UBUNTU))
+    🚀 Automação
+      Ansible
+      Docker
+    ⚙️ Segurança
+      Kernel
+      Rede
+      Sistema
+    📊 Monitoramento
+      Auditd
+      AIDE
+    ⚖️ Conformidade
+      Testes BATS
 ```
 
 ---
