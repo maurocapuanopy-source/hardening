@@ -29,19 +29,16 @@ Visualize a estrutura do projeto:
 ### Estrutura Detalhada (Markdown)
 ```mermaid
 mindmap
-  root((🛡️ HARDENING UBUNTU))
-    🚀 Automação
-      ::icon(fa fa-robot)
-      [Guia Ansible](guia-ansible.md)
-      [Guia Docker](guia-docker.md)
-    ⚙️ Segurança de Sistema
-      ::icon(fa fa-cog)
-      [Kernel & Networking](manual.md#kernel-fsysctl)
-      [Controles de Acesso](manual.md#acesso-e-identidade)
-    📊 Monitoramento
-      ::icon(fa fa-chart-line)
-      [Auditd](manual.md#monitoramento-e-auditoria)
-      [Integridade AIDE](manual.md#referencia-tecnica)
+  root(("🛡️ HARDENING UBUNTU"))
+    "🚀 Automação"
+      "Guia Ansible"
+      "Guia Docker"
+    "⚙️ Segurança de Sistema"
+      "Kernel & Networking"
+      "Controles de Acesso"
+    "📊 Monitoramento"
+      "Auditd"
+      "Integridade AIDE"
 ```
 
 ---
